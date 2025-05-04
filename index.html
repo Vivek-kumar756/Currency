@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Project -->
+  <div class="feedbackbox">
+  <form action="https://api.web3forms.com/submit" method="POST">
+
+    <!-- Replace with your Access Key -->
+    <input type="hidden" name="access_key" value="ce3dc9ba-14e0-47eb-abd4-4e9c2ca00c62">
+
+    <!-- Form Inputs. Each input must have a name="" attribute -->
+    <input type="text" class="input-box" name="name" placeholder="Your Name" required>
+    <input type="email" id="mail" class="input-box" name="email" spellcheck="true" onkeyup="emailValidation()" placeholder="Your Email address" required>
+    <p id="error"></p>
+    <textarea name="message" class="input-box" placeholder="message..." required></textarea>
+
+    <!-- Honeypot Spam Protection -->
+    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+    <!-- Custom Confirmation / Success Page -->
+    <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+
+    <button type="submit">Submit Form</button>
+
+</form>
+</div>
+  <script src="main.js"></script>
+</body>
+</html>
